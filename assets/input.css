@@ -1,41 +1,59 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Archivo";
+  font-family: "Bebas Neue";
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 400;
   font-display: swap;
-  src: url("./fonts/Archivo-variable.woff2") format("woff2");
+  src: url("./fonts/BebasNeue-400.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Space Grotesk";
+  font-family: "Source Sans 3";
   font-style: normal;
-  font-weight: 300 700;
+  font-weight: 200 900;
   font-display: swap;
-  src: url("./fonts/SpaceGrotesk-variable.woff2") format("woff2");
+  src: url("./fonts/SourceSans3-variable.woff2") format("woff2");
 }
 
 @theme {
-  --color-primary: #78716C;
+  --color-primary: #22262B;
+  --color-primary-light: #363B42;
   --color-on-primary: #FFFFFF;
-  --color-secondary: #A8A29E;
-  --color-accent: #D97706;
-  --color-background: #FAF5F2;
-  --color-foreground: #0F172A;
-  --color-muted: #F6F6F6;
-  --color-border: #EEEDED;
+  --color-secondary: #6B6560;
+  --color-accent: #E1590A;
+  --color-accent-dark: #B8460A;
+  --color-on-accent: #FFFFFF;
+  --color-background: #F5F3F0;
+  --color-surface: #FFFFFF;
+  --color-foreground: #1C1B1A;
+  --color-muted: #EDEAE5;
+  --color-border: #DDD8D1;
+  --color-success: #15803D;
+  --color-warning: #F59E0B;
 
-  --font-heading: "Archivo", sans-serif;
-  --font-body: "Space Grotesk", sans-serif;
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
 }
 
 html {
   font-family: theme(--font-body);
 }
 
-.font-heading {
-  font-family: theme(--font-heading);
+.font-display {
+  font-family: theme(--font-display);
+  letter-spacing: 0.01em;
+}
+
+.bg-blueprint {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
 
 @media (prefers-reduced-motion: reduce) {

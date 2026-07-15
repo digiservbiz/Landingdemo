@@ -3,163 +3,137 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>NCO Design — Branding &amp; Digital Design Studio</title>
-<meta name="description" content="NCO Design is a Belgian creative studio crafting brand identities, websites and digital products for ambitious teams." />
+<title>NCO Design &amp; Build — General Contractor, Renovation &amp; Construction</title>
+<meta name="description" content="NCO Design & Build is a licensed general contractor specializing in kitchen, bathroom and full-home renovations, extensions and new builds." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E1590A' stroke-width='2.5'%3E%3Cpath d='M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z'/%3E%3C/svg%3E" />
 <link href="assets/style.css" rel="stylesheet" />
 </head>
-<body class="bg-background text-foreground antialiased">
+<body class="bg-background text-foreground antialiased font-body">
 
-<!-- Nav -->
-<header class="fixed top-0 inset-x-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-16 flex items-center justify-between">
-    <a href="#top" class="font-heading font-extrabold text-lg tracking-tight">NCO<span class="text-accent">.</span>Design</a>
-    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-      <a href="#work" class="hover:text-accent transition-colors duration-200">Work</a>
-      <a href="#about" class="hover:text-accent transition-colors duration-200">Studio</a>
+<!-- Utility bar -->
+<div class="hidden sm:block bg-primary text-on-primary/80 text-xs">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-9 flex items-center justify-between">
+    <div class="flex items-center gap-6">
+      <span class="inline-flex items-center gap-1.5">
+        <svg class="size-3.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        Licensed &amp; Insured — Reg. BE 0876.543.210
+      </span>
+      <span class="hidden lg:inline-flex items-center gap-1.5">
+        <svg class="size-3.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Serving Brussels &amp; Walloon Brabant
+      </span>
+    </div>
+    <a href="tel:+3221234567" class="inline-flex items-center gap-1.5 hover:text-on-primary transition-colors duration-200">
+      <svg class="size-3.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v4a2 2 0 01-2 2C9.5 21 3 14.5 3 6a2 2 0 012-2z"/></svg>
+      +32 2 123 45 67
+    </a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-18 py-3 flex items-center justify-between">
+    <a href="#top" class="flex items-baseline gap-2">
+      <span class="font-display text-3xl leading-none tracking-wide">NCO<span class="text-accent">.</span></span>
+      <span class="hidden sm:inline text-xs font-semibold uppercase tracking-widest text-secondary self-center">Design &amp; Build</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
       <a href="#services" class="hover:text-accent transition-colors duration-200">Services</a>
+      <a href="#process" class="hover:text-accent transition-colors duration-200">Process</a>
+      <a href="#projects" class="hover:text-accent transition-colors duration-200">Projects</a>
+      <a href="#reviews" class="hover:text-accent transition-colors duration-200">Reviews</a>
+      <a href="#faq" class="hover:text-accent transition-colors duration-200">FAQ</a>
       <a href="#contact" class="hover:text-accent transition-colors duration-200">Contact</a>
     </nav>
-    <a href="#contact" class="hidden md:inline-flex items-center justify-center min-h-[44px] px-5 rounded-full bg-primary text-on-primary text-sm font-semibold hover:bg-accent transition-colors duration-200">
-      Start a project
-    </a>
-    <button id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden inline-flex items-center justify-center size-11 rounded-full border border-border">
-      <svg class="size-5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
-      </svg>
-    </button>
+    <div class="flex items-center gap-3">
+      <a href="tel:+3221234567" class="hidden md:inline-flex items-center gap-2 text-sm font-bold">
+        <svg class="size-4 text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v4a2 2 0 01-2 2C9.5 21 3 14.5 3 6a2 2 0 012-2z"/></svg>
+        +32 2 123 45 67
+      </a>
+      <a href="#contact" class="inline-flex items-center justify-center min-h-11 px-5 rounded-md bg-accent text-on-accent text-sm font-bold hover:bg-accent-dark transition-colors duration-200 cursor-pointer">
+        Get Free Quote
+      </a>
+      <button id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden inline-flex items-center justify-center size-11 rounded-md border border-border shrink-0">
+        <svg class="size-5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+    </div>
   </div>
-  <nav id="mobile-menu" class="hidden md:hidden border-t border-border bg-background px-4 py-4 flex flex-col gap-4 text-sm font-medium">
-    <a href="#work" class="hover:text-accent transition-colors duration-200">Work</a>
-    <a href="#about" class="hover:text-accent transition-colors duration-200">Studio</a>
+  <nav id="mobile-menu" class="hidden lg:hidden border-t border-border bg-background px-4 py-4 flex flex-col gap-4 text-sm font-semibold">
     <a href="#services" class="hover:text-accent transition-colors duration-200">Services</a>
-    <a href="#contact" class="min-h-[44px] flex items-center justify-center rounded-full bg-primary text-on-primary font-semibold">Start a project</a>
+    <a href="#process" class="hover:text-accent transition-colors duration-200">Process</a>
+    <a href="#projects" class="hover:text-accent transition-colors duration-200">Projects</a>
+    <a href="#reviews" class="hover:text-accent transition-colors duration-200">Reviews</a>
+    <a href="#faq" class="hover:text-accent transition-colors duration-200">FAQ</a>
+    <a href="#contact" class="hover:text-accent transition-colors duration-200">Contact</a>
+    <a href="tel:+3221234567" class="font-bold text-accent">+32 2 123 45 67</a>
   </nav>
 </header>
 
 <main id="top">
 
   <!-- Hero -->
-  <section class="pt-40 pb-24 md:pt-52 md:pb-32 px-4 md:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
-      <p class="font-medium text-sm tracking-widest uppercase text-secondary mb-6">Branding &amp; Digital Design Studio — Belgium</p>
-      <h1 class="font-heading font-extrabold text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight max-w-4xl">
-        We design brands that <span class="text-accent">earn attention</span> and keep it.
+  <section class="relative overflow-hidden bg-primary text-on-primary">
+    <div class="absolute inset-0 bg-blueprint opacity-60" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/70 to-primary/20" aria-hidden="true"></div>
+    <div class="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-16 pb-20 md:pt-24 md:pb-28">
+      <p class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent mb-6 px-3 py-1.5 rounded-full border border-accent/40 bg-accent/10">
+        General Contractor — Renovation &amp; New Build
+      </p>
+      <h1 class="font-display text-6xl sm:text-7xl lg:text-8xl leading-[0.95] tracking-wide max-w-4xl text-balance">
+        We Build Renovations That Outlast the Trend.
       </h1>
-      <p class="mt-8 text-lg md:text-xl text-primary max-w-2xl leading-relaxed">
-        NCO Design partners with founders and marketing teams to build identities, websites and products with clear thinking and sharp craft — from first sketch to shipped pixel.
+      <p class="mt-8 text-lg md:text-xl text-on-primary/75 max-w-2xl leading-relaxed">
+        From kitchen remodels to full-home extensions, NCO Design &amp; Build handles design, permits and construction under one roof — fixed pricing, real deadlines, no surprises.
       </p>
       <div class="mt-10 flex flex-wrap items-center gap-4">
-        <a href="#contact" class="inline-flex items-center justify-center min-h-[44px] px-7 rounded-full bg-primary text-on-primary font-semibold hover:bg-accent transition-colors duration-200 cursor-pointer">
-          Start a project
+        <a href="#contact" class="inline-flex items-center justify-center min-h-12 px-8 rounded-md bg-accent text-on-accent font-bold hover:bg-accent-dark transition-colors duration-200 cursor-pointer">
+          Get a Free Estimate
         </a>
-        <a href="#work" class="inline-flex items-center justify-center min-h-[44px] px-7 rounded-full border border-border font-semibold hover:border-accent hover:text-accent transition-colors duration-200 cursor-pointer">
-          See our work
+        <a href="#projects" class="inline-flex items-center justify-center min-h-12 px-8 rounded-md border border-white/30 font-bold hover:border-white transition-colors duration-200 cursor-pointer">
+          View Our Work
         </a>
+      </div>
+      <div class="mt-14 flex flex-wrap items-center gap-x-10 gap-y-4 text-sm font-semibold text-on-primary/80">
+        <span class="inline-flex items-center gap-2">
+          <svg class="size-5 text-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          Licensed &amp; Insured
+        </span>
+        <span class="inline-flex items-center gap-2">
+          <svg class="size-5 text-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          15+ Years Experience
+        </span>
+        <span class="inline-flex items-center gap-2">
+          <svg class="size-5 text-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+          500+ Projects Completed
+        </span>
+        <span class="inline-flex items-center gap-2">
+          <svg class="size-5 text-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" fill-opacity="0" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z" fill="currentColor"/></svg>
+          5.0 Rated (120+ Reviews)
+        </span>
       </div>
     </div>
   </section>
 
-  <!-- Trust strip -->
-  <section class="border-y border-border py-8 px-4 md:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-secondary font-heading font-bold tracking-wide text-sm uppercase">
-      <span>Aurea Living</span>
-      <span>Nordlicht</span>
-      <span>Verve Retail</span>
-      <span>Solace Health</span>
-      <span>Kaimana</span>
-    </div>
-  </section>
-
-  <!-- Work / Portfolio Grid -->
-  <section id="work" class="py-24 md:py-32 px-4 md:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex items-end justify-between gap-6 mb-12">
-        <h2 class="font-heading font-bold text-3xl md:text-4xl tracking-tight">Selected work</h2>
-        <a href="#contact" class="hidden sm:inline text-sm font-semibold hover:text-accent transition-colors duration-200">All projects &rarr;</a>
+  <!-- Stats -->
+  <section class="border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 divide-x divide-border">
+      <div class="py-10 px-4 text-center">
+        <p class="font-display text-5xl text-accent"><span class="counter" data-target="15">0</span>+</p>
+        <p class="mt-2 text-sm font-semibold text-secondary">Years in Business</p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <a href="#" class="group block">
-          <div class="aspect-[4/5] rounded-2xl bg-muted overflow-hidden relative">
-            <div class="absolute inset-0 bg-linear-to-br from-primary/20 to-accent/30 group-hover:scale-105 transition-transform duration-500"></div>
-            <div class="absolute bottom-0 inset-x-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-linear-to-t from-foreground/70 to-transparent">
-              <span class="text-on-primary text-sm font-semibold">View case study &rarr;</span>
-            </div>
-          </div>
-          <h3 class="mt-4 font-heading font-semibold text-lg">Aurea Living</h3>
-          <p class="text-sm text-secondary">Brand identity &amp; e-commerce</p>
-        </a>
-
-        <a href="#" class="group block">
-          <div class="aspect-[4/5] rounded-2xl bg-muted overflow-hidden relative">
-            <div class="absolute inset-0 bg-linear-to-br from-accent/20 to-primary/30 group-hover:scale-105 transition-transform duration-500"></div>
-            <div class="absolute bottom-0 inset-x-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-linear-to-t from-foreground/70 to-transparent">
-              <span class="text-on-primary text-sm font-semibold">View case study &rarr;</span>
-            </div>
-          </div>
-          <h3 class="mt-4 font-heading font-semibold text-lg">Nordlicht</h3>
-          <p class="text-sm text-secondary">Web design &amp; development</p>
-        </a>
-
-        <a href="#" class="group block">
-          <div class="aspect-[4/5] rounded-2xl bg-muted overflow-hidden relative">
-            <div class="absolute inset-0 bg-linear-to-br from-secondary/20 to-accent/20 group-hover:scale-105 transition-transform duration-500"></div>
-            <div class="absolute bottom-0 inset-x-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-linear-to-t from-foreground/70 to-transparent">
-              <span class="text-on-primary text-sm font-semibold">View case study &rarr;</span>
-            </div>
-          </div>
-          <h3 class="mt-4 font-heading font-semibold text-lg">Verve Retail</h3>
-          <p class="text-sm text-secondary">Packaging &amp; art direction</p>
-        </a>
-
-        <a href="#" class="group block">
-          <div class="aspect-[4/5] rounded-2xl bg-muted overflow-hidden relative">
-            <div class="absolute inset-0 bg-linear-to-br from-primary/30 to-secondary/20 group-hover:scale-105 transition-transform duration-500"></div>
-            <div class="absolute bottom-0 inset-x-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-linear-to-t from-foreground/70 to-transparent">
-              <span class="text-on-primary text-sm font-semibold">View case study &rarr;</span>
-            </div>
-          </div>
-          <h3 class="mt-4 font-heading font-semibold text-lg">Solace Health</h3>
-          <p class="text-sm text-secondary">Digital product design</p>
-        </a>
-
-        <a href="#" class="group block">
-          <div class="aspect-[4/5] rounded-2xl bg-muted overflow-hidden relative">
-            <div class="absolute inset-0 bg-linear-to-br from-accent/30 to-primary/20 group-hover:scale-105 transition-transform duration-500"></div>
-            <div class="absolute bottom-0 inset-x-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-linear-to-t from-foreground/70 to-transparent">
-              <span class="text-on-primary text-sm font-semibold">View case study &rarr;</span>
-            </div>
-          </div>
-          <h3 class="mt-4 font-heading font-semibold text-lg">Kaimana</h3>
-          <p class="text-sm text-secondary">Brand identity &amp; motion</p>
-        </a>
-
-        <a href="#contact" class="group flex flex-col items-center justify-center text-center rounded-2xl border-2 border-dashed border-border hover:border-accent aspect-[4/5] transition-colors duration-300">
-          <p class="font-heading font-semibold text-lg">Have a project in mind?</p>
-          <p class="mt-2 text-sm text-accent font-semibold group-hover:underline">Let's talk &rarr;</p>
-        </a>
-
+      <div class="py-10 px-4 text-center">
+        <p class="font-display text-5xl text-accent"><span class="counter" data-target="500">0</span>+</p>
+        <p class="mt-2 text-sm font-semibold text-secondary">Projects Completed</p>
       </div>
-    </div>
-  </section>
-
-  <!-- About / Philosophy -->
-  <section id="about" class="py-24 md:py-32 px-4 md:px-6 lg:px-8 bg-muted">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-      <h2 class="font-heading font-bold text-3xl md:text-4xl tracking-tight">Small studio.<br />Sharp thinking.<br />No fluff.</h2>
-      <div class="space-y-6 text-primary text-lg leading-relaxed">
-        <p>NCO Design is a Belgium-based studio working with founders and marketing teams who need design that performs — not just design that looks nice in a portfolio.</p>
-        <p>We keep teams small on purpose. Every project gets senior attention from strategy through to the final line of CSS, so nothing gets lost in translation between "the idea" and "the thing that ships."</p>
-        <div class="grid grid-cols-2 gap-8 pt-4">
-          <div>
-            <p class="font-heading font-extrabold text-4xl text-foreground">40+</p>
-            <p class="text-sm text-secondary mt-1">Brands launched</p>
-          </div>
-          <div>
-            <p class="font-heading font-extrabold text-4xl text-foreground">8 yrs</p>
-            <p class="text-sm text-secondary mt-1">In business</p>
-          </div>
-        </div>
+      <div class="py-10 px-4 text-center">
+        <p class="font-display text-5xl text-accent"><span class="counter" data-target="98">0</span>%</p>
+        <p class="mt-2 text-sm font-semibold text-secondary">Client Satisfaction</p>
+      </div>
+      <div class="py-10 px-4 text-center">
+        <p class="font-display text-5xl text-accent"><span class="counter" data-target="24">0</span></p>
+        <p class="mt-2 text-sm font-semibold text-secondary">In-House Experts</p>
       </div>
     </div>
   </section>
@@ -167,88 +141,466 @@
   <!-- Services -->
   <section id="services" class="py-24 md:py-32 px-4 md:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
-      <h2 class="font-heading font-bold text-3xl md:text-4xl tracking-tight mb-12">What we do</h2>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
+      <div class="max-w-2xl mb-16">
+        <p class="text-sm font-bold uppercase tracking-widest text-accent mb-3">What We Build</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-wide">Full-Service Renovation &amp; Construction</h2>
+        <p class="mt-4 text-secondary text-lg leading-relaxed">One team, one contract, one point of contact — from the first sketch to the final coat of paint.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <div class="bg-background p-8 hover:bg-muted transition-colors duration-200">
-          <svg class="size-8 text-accent mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7z"/></svg>
-          <h3 class="font-heading font-semibold text-xl mb-2">Brand Identity</h3>
-          <p class="text-secondary leading-relaxed">Logo systems, visual language, and guidelines built to hold up across every touchpoint.</p>
+        <div class="group rounded-lg border border-border bg-surface p-8 hover:border-accent hover:shadow-lg transition-all duration-300">
+          <div class="size-12 rounded-md bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent transition-colors duration-300">
+            <svg class="size-6 text-accent group-hover:text-on-accent transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 10l2-6h14l2 6M4 10h16v10a1 1 0 01-1 1H5a1 1 0 01-1-1z"/><path d="M9 21v-6h6v6"/></svg>
+          </div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Kitchen Renovation</h3>
+          <p class="text-secondary leading-relaxed mb-4">Layout redesign, custom cabinetry, and premium finishes built around how you actually cook and live.</p>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-bold text-accent hover:gap-2.5 transition-all duration-200">Learn more <span aria-hidden="true">&rarr;</span></a>
         </div>
 
-        <div class="bg-background p-8 hover:bg-muted transition-colors duration-200">
-          <svg class="size-8 text-accent mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
-          <h3 class="font-heading font-semibold text-xl mb-2">Web Design &amp; Build</h3>
-          <p class="text-secondary leading-relaxed">Fast, accessible, conversion-minded websites — designed and shipped by the same team.</p>
+        <div class="group rounded-lg border border-border bg-surface p-8 hover:border-accent hover:shadow-lg transition-all duration-300">
+          <div class="size-12 rounded-md bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent transition-colors duration-300">
+            <svg class="size-6 text-accent group-hover:text-on-accent transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M4 14h16M9 3v4M15 3v4"/></svg>
+          </div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Bathroom Remodeling</h3>
+          <p class="text-secondary leading-relaxed mb-4">Waterproofing, tiling and fixtures done right the first time — no leaks, no callbacks.</p>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-bold text-accent hover:gap-2.5 transition-all duration-200">Learn more <span aria-hidden="true">&rarr;</span></a>
         </div>
 
-        <div class="bg-background p-8 hover:bg-muted transition-colors duration-200">
-          <svg class="size-8 text-accent mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
-          <h3 class="font-heading font-semibold text-xl mb-2">Product Design</h3>
-          <p class="text-secondary leading-relaxed">UX/UI for web and mobile apps, from first wireframe to a polished design system.</p>
+        <div class="group rounded-lg border border-border bg-surface p-8 hover:border-accent hover:shadow-lg transition-all duration-300">
+          <div class="size-12 rounded-md bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent transition-colors duration-300">
+            <svg class="size-6 text-accent group-hover:text-on-accent transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 21V9l6-4 6 4v12M15 11l6-3v13M9 21v-5h3v5"/></svg>
+          </div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Home Extensions</h3>
+          <p class="text-secondary leading-relaxed mb-4">Add the square footage you need with an extension that reads as original to the house.</p>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-bold text-accent hover:gap-2.5 transition-all duration-200">Learn more <span aria-hidden="true">&rarr;</span></a>
         </div>
 
-        <div class="bg-background p-8 hover:bg-muted transition-colors duration-200">
-          <svg class="size-8 text-accent mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 16l4-8 4 5 3-4 5 7"/></svg>
-          <h3 class="font-heading font-semibold text-xl mb-2">Art Direction</h3>
-          <p class="text-secondary leading-relaxed">Photography, packaging and campaign direction that keeps a brand consistent everywhere.</p>
+        <div class="group rounded-lg border border-border bg-surface p-8 hover:border-accent hover:shadow-lg transition-all duration-300">
+          <div class="size-12 rounded-md bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent transition-colors duration-300">
+            <svg class="size-6 text-accent group-hover:text-on-accent transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 21V11l8-6 8 6v10a1 1 0 01-1 1H5a1 1 0 01-1-1z"/><path d="M9 21v-8h6v8"/></svg>
+          </div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Full House Renovation</h3>
+          <p class="text-secondary leading-relaxed mb-4">Gut renovations and structural work managed start to finish, on a fixed timeline.</p>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-bold text-accent hover:gap-2.5 transition-all duration-200">Learn more <span aria-hidden="true">&rarr;</span></a>
         </div>
 
-        <div class="bg-background p-8 hover:bg-muted transition-colors duration-200">
-          <svg class="size-8 text-accent mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
-          <h3 class="font-heading font-semibold text-xl mb-2">Motion &amp; Interaction</h3>
-          <p class="text-secondary leading-relaxed">Purposeful micro-interactions and motion design that make products feel alive, not busy.</p>
+        <div class="group rounded-lg border border-border bg-surface p-8 hover:border-accent hover:shadow-lg transition-all duration-300">
+          <div class="size-12 rounded-md bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent transition-colors duration-300">
+            <svg class="size-6 text-accent group-hover:text-on-accent transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 12l9-8 9 8M6 10v10h12V10"/></svg>
+          </div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Roofing &amp; Exteriors</h3>
+          <p class="text-secondary leading-relaxed mb-4">Roofing, facades and insulation upgrades that protect the building envelope for decades.</p>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-bold text-accent hover:gap-2.5 transition-all duration-200">Learn more <span aria-hidden="true">&rarr;</span></a>
         </div>
 
-        <div class="bg-background p-8 hover:bg-muted transition-colors duration-200">
-          <svg class="size-8 text-accent mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20c4-2 7-5.5 7-10a7 7 0 10-14 0c0 4.5 3 8 7 10z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          <h3 class="font-heading font-semibold text-xl mb-2">Design Systems</h3>
-          <p class="text-secondary leading-relaxed">Token-based design systems that keep design and engineering teams shipping in sync.</p>
+        <div class="group rounded-lg border border-border bg-surface p-8 hover:border-accent hover:shadow-lg transition-all duration-300">
+          <div class="size-12 rounded-md bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent transition-colors duration-300">
+            <svg class="size-6 text-accent group-hover:text-on-accent transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 9v11"/></svg>
+          </div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Interior Finishing</h3>
+          <p class="text-secondary leading-relaxed mb-4">Flooring, millwork and paint — the final 10% that makes a space feel finished.</p>
+          <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-bold text-accent hover:gap-2.5 transition-all duration-200">Learn more <span aria-hidden="true">&rarr;</span></a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- CTA / Contact -->
-  <section id="contact" class="py-24 md:py-32 px-4 md:px-6 lg:px-8">
-    <div class="max-w-5xl mx-auto rounded-3xl bg-primary text-on-primary p-10 md:p-16 text-center">
-      <h2 class="font-heading font-bold text-3xl md:text-5xl tracking-tight max-w-2xl mx-auto">Got a project? Let's make it look this good.</h2>
-      <p class="mt-6 text-lg text-on-primary/80 max-w-xl mx-auto">Tell us a bit about what you're building — we reply within one business day.</p>
-      <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
-        <a href="mailto:hello@ncodesign.be" class="inline-flex items-center justify-center min-h-[44px] px-7 rounded-full bg-accent text-on-primary font-semibold hover:bg-white hover:text-primary transition-colors duration-200 cursor-pointer">
-          hello@ncodesign.be
+  <!-- Process -->
+  <section id="process" class="py-24 md:py-32 px-4 md:px-6 lg:px-8 bg-primary text-on-primary">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-16">
+        <p class="text-sm font-bold uppercase tracking-widest text-accent mb-3">How We Work</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-wide">Four Steps From Idea to Handover</h2>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8 md:gap-6 relative">
+        <div class="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-px bg-white/15" aria-hidden="true"></div>
+
+        <div class="relative">
+          <div class="size-12 rounded-full bg-accent text-on-accent font-display text-xl flex items-center justify-center mb-6">01</div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Free Consultation</h3>
+          <p class="text-on-primary/70 leading-relaxed">We visit your site, listen to your goals, and scope the project — no obligation.</p>
+        </div>
+        <div class="relative">
+          <div class="size-12 rounded-full bg-accent text-on-accent font-display text-xl flex items-center justify-center mb-6">02</div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Design &amp; Planning</h3>
+          <p class="text-on-primary/70 leading-relaxed">Detailed drawings, material selection and a fixed-price quote before anything is booked.</p>
+        </div>
+        <div class="relative">
+          <div class="size-12 rounded-full bg-accent text-on-accent font-display text-xl flex items-center justify-center mb-6">03</div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Construction</h3>
+          <p class="text-on-primary/70 leading-relaxed">A dedicated project manager keeps you updated weekly, on-site and by phone.</p>
+        </div>
+        <div class="relative">
+          <div class="size-12 rounded-full bg-accent text-on-accent font-display text-xl flex items-center justify-center mb-6">04</div>
+          <h3 class="font-display text-2xl tracking-wide mb-2">Final Walkthrough</h3>
+          <p class="text-on-primary/70 leading-relaxed">A joint inspection, a clean site, and a 5-year workmanship warranty on everything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects / Before-After -->
+  <section id="projects" class="py-24 md:py-32 px-4 md:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-16">
+        <p class="text-sm font-bold uppercase tracking-widest text-accent mb-3">Recent Work</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-wide">See the Transformation</h2>
+      </div>
+
+      <!-- Before/after slider -->
+      <div class="mb-16">
+        <div id="ba-slider" class="relative w-full aspect-video max-h-[520px] rounded-lg overflow-hidden border border-border select-none">
+          <div class="absolute inset-0 bg-linear-to-br from-stone-300 to-stone-400 flex items-end p-6">
+            <span class="text-xs font-bold uppercase tracking-widest bg-primary text-on-primary px-3 py-1.5 rounded">Before</span>
+          </div>
+          <div id="ba-after" class="absolute inset-0 bg-linear-to-br from-accent/70 to-primary overflow-hidden flex items-end p-6" style="clip-path: inset(0 0 0 50%);">
+            <span class="text-xs font-bold uppercase tracking-widest bg-accent text-on-accent px-3 py-1.5 rounded">After</span>
+          </div>
+          <div id="ba-handle" class="absolute top-0 bottom-0 w-1 bg-white shadow-lg cursor-ew-resize" style="left: 50%;">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-10 rounded-full bg-white shadow-lg flex items-center justify-center">
+              <svg class="size-5 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg>
+            </div>
+          </div>
+          <input id="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after renovation photos" class="absolute inset-x-0 bottom-2 mx-6 w-[calc(100%-3rem)] opacity-0 cursor-ew-resize h-8" />
+        </div>
+        <p class="mt-3 text-center text-sm text-secondary">Kitchen renovation — Ixelles, Brussels. Drag to compare.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="#" class="group block">
+          <div class="aspect-4/5 rounded-lg overflow-hidden bg-linear-to-br from-stone-300 to-stone-400 relative">
+            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors duration-300 flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-on-primary text-sm font-bold">View project</span>
+            </div>
+          </div>
+          <h3 class="mt-3 font-display text-xl tracking-wide">Uccle Family Home</h3>
+          <p class="text-sm text-secondary">Full house renovation</p>
         </a>
-        <a href="tel:+32000000000" class="inline-flex items-center justify-center min-h-[44px] px-7 rounded-full border border-white/40 font-semibold hover:border-white transition-colors duration-200 cursor-pointer">
-          +32 000 00 00 00
+        <a href="#" class="group block">
+          <div class="aspect-4/5 rounded-lg overflow-hidden bg-linear-to-br from-accent/40 to-stone-400 relative">
+            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors duration-300 flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-on-primary text-sm font-bold">View project</span>
+            </div>
+          </div>
+          <h3 class="mt-3 font-display text-xl tracking-wide">Etterbeek Loft</h3>
+          <p class="text-sm text-secondary">Extension &amp; roofing</p>
+        </a>
+        <a href="#" class="group block">
+          <div class="aspect-4/5 rounded-lg overflow-hidden bg-linear-to-br from-stone-400 to-primary/60 relative">
+            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors duration-300 flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-on-primary text-sm font-bold">View project</span>
+            </div>
+          </div>
+          <h3 class="mt-3 font-display text-xl tracking-wide">Waterloo Bathroom</h3>
+          <p class="text-sm text-secondary">Bathroom remodel</p>
+        </a>
+        <a href="#" class="group block">
+          <div class="aspect-4/5 rounded-lg overflow-hidden bg-linear-to-br from-stone-300 to-accent/30 relative">
+            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors duration-300 flex items-center justify-center">
+              <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-on-primary text-sm font-bold">View project</span>
+            </div>
+          </div>
+          <h3 class="mt-3 font-display text-xl tracking-wide">Woluwe Kitchen</h3>
+          <p class="text-sm text-secondary">Kitchen renovation</p>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="py-24 md:py-32 px-4 md:px-6 lg:px-8 bg-muted">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-widest text-accent mb-3">Why Choose Us</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-wide mb-8">Built on Guarantees, Not Just Promises</h2>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-3">
+            <svg class="size-6 text-accent shrink-0 mt-0.5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+            <span><strong class="font-semibold">Licensed &amp; fully insured</strong> — every project covered by liability and 10-year structural insurance.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="size-6 text-accent shrink-0 mt-0.5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+            <span><strong class="font-semibold">Fixed-price quotes</strong> — the number we agree on is the number you pay. No change-order surprises.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="size-6 text-accent shrink-0 mt-0.5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+            <span><strong class="font-semibold">On-time guarantee</strong> — miss the agreed deadline and we credit you for every late day.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="size-6 text-accent shrink-0 mt-0.5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+            <span><strong class="font-semibold">5-year workmanship warranty</strong> — on every renovation and build we complete.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="size-6 text-accent shrink-0 mt-0.5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+            <span><strong class="font-semibold">One dedicated project manager</strong> — a single point of contact from quote to handover.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="size-6 text-accent shrink-0 mt-0.5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+            <span><strong class="font-semibold">Clean, respectful job sites</strong> — daily clean-up and protected walkways, every day we're on-site.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="rounded-lg bg-primary text-on-primary p-10 md:p-12">
+        <svg class="size-10 text-accent mb-6" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 7c-2.5 1.5-4 4-4 7a4 4 0 004 4 4 4 0 004-4c0-2-1.2-3.6-3-4.2C8.3 9.2 9 8 10 7L7 7zm10 0c-2.5 1.5-4 4-4 7a4 4 0 004 4 4 4 0 004-4c0-2-1.2-3.6-3-4.2C18.3 9.2 19 8 20 7l-3 0z"/></svg>
+        <p class="font-display text-2xl md:text-3xl leading-snug tracking-wide">
+          "They quoted a fixed price and a 10-week timeline for our full renovation — and hit both. No hidden costs, no drama."
+        </p>
+        <p class="mt-6 text-on-primary/70 font-semibold">Julie &amp; Marc Devos — Uccle, Brussels</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="reviews" class="py-24 md:py-32 px-4 md:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-16">
+        <p class="text-sm font-bold uppercase tracking-widest text-accent mb-3">Client Reviews</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-wide">What Homeowners Say</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="rounded-lg border border-border bg-surface p-8">
+          <div class="flex gap-0.5 mb-4 text-accent" aria-label="5 out of 5 stars">
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+          </div>
+          <p class="text-foreground leading-relaxed mb-6">"Our kitchen was gutted and rebuilt in three weeks flat, exactly as scoped. The crew was tidy and genuinely pleasant to have in the house."</p>
+          <p class="font-semibold">Sophie Laurent</p>
+          <p class="text-sm text-secondary">Kitchen Renovation, Ixelles</p>
+        </div>
+
+        <div class="rounded-lg border border-border bg-surface p-8">
+          <div class="flex gap-0.5 mb-4 text-accent" aria-label="5 out of 5 stars">
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+          </div>
+          <p class="text-foreground leading-relaxed mb-6">"We added a 30m² extension for our growing family. The design phase caught issues before they became expensive mistakes on-site."</p>
+          <p class="font-semibold">Thomas &amp; Anke Peeters</p>
+          <p class="text-sm text-secondary">Home Extension, Etterbeek</p>
+        </div>
+
+        <div class="rounded-lg border border-border bg-surface p-8">
+          <div class="flex gap-0.5 mb-4 text-accent" aria-label="5 out of 5 stars">
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+            <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.8z"/></svg>
+          </div>
+          <p class="text-foreground leading-relaxed mb-6">"Full house renovation on a 1930s property. They handled the permits, the surprises behind the walls, all of it, without blowing the budget."</p>
+          <p class="font-semibold">Julie &amp; Marc Devos</p>
+          <p class="text-sm text-secondary">Full House Renovation, Uccle</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-24 md:py-32 px-4 md:px-6 lg:px-8 bg-muted">
+    <div class="max-w-4xl mx-auto">
+      <div class="max-w-2xl mb-16">
+        <p class="text-sm font-bold uppercase tracking-widest text-accent mb-3">Frequently Asked</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-wide">Questions Before You Start</h2>
+      </div>
+      <div class="space-y-4">
+
+        <details class="group rounded-lg border border-border bg-surface p-6 open:pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg list-none">
+            How long does a typical renovation take?
+            <svg class="size-5 shrink-0 transition-transform duration-200 group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-4 text-secondary leading-relaxed">A kitchen or bathroom typically takes 2–4 weeks, an extension 8–12 weeks, and a full house renovation 3–6 months. You'll get a specific, fixed timeline in your quote.</p>
+        </details>
+
+        <details class="group rounded-lg border border-border bg-surface p-6 open:pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg list-none">
+            Do you handle permits and paperwork?
+            <svg class="size-5 shrink-0 transition-transform duration-200 group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-4 text-secondary leading-relaxed">Yes — we prepare and file all required municipal permits for extensions and structural work as part of the design phase, before construction begins.</p>
+        </details>
+
+        <details class="group rounded-lg border border-border bg-surface p-6 open:pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg list-none">
+            How is the quote priced — is it really fixed?
+            <svg class="size-5 shrink-0 transition-transform duration-200 group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-4 text-secondary leading-relaxed">After the site visit and design phase, you receive one fixed-price quote covering labor and materials. It only changes if you request additional scope in writing.</p>
+        </details>
+
+        <details class="group rounded-lg border border-border bg-surface p-6 open:pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg list-none">
+            Can we stay in the house during renovation?
+            <svg class="size-5 shrink-0 transition-transform duration-200 group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-4 text-secondary leading-relaxed">For most single-room projects, yes. For full-house renovations we'll advise honestly during the consultation — sometimes staying is fine, sometimes it isn't worth the disruption.</p>
+        </details>
+
+        <details class="group rounded-lg border border-border bg-surface p-6 open:pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg list-none">
+            What warranty do you offer?
+            <svg class="size-5 shrink-0 transition-transform duration-200 group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-4 text-secondary leading-relaxed">Every project includes a 5-year workmanship warranty, on top of the standard 10-year structural insurance required by Belgian law for new construction.</p>
+        </details>
+
+        <details class="group rounded-lg border border-border bg-surface p-6 open:pb-6">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg list-none">
+            Which areas do you serve?
+            <svg class="size-5 shrink-0 transition-transform duration-200 group-open:rotate-180" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p class="mt-4 text-secondary leading-relaxed">We work across Brussels and Walloon Brabant, including Uccle, Ixelles, Etterbeek, Woluwe and Waterloo. Get in touch if you're just outside this area.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 md:py-32 px-4 md:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-5 gap-12">
+
+      <div class="lg:col-span-3 rounded-lg border border-border bg-surface p-8 md:p-10">
+        <h2 class="font-display text-3xl md:text-4xl tracking-wide mb-2">Request a Free Estimate</h2>
+        <p class="text-secondary mb-8">Tell us about your project — we'll get back to you within one business day.</p>
+        <form class="grid sm:grid-cols-2 gap-5" onsubmit="event.preventDefault(); this.reset(); document.getElementById('form-success').classList.remove('hidden');">
+          <div class="sm:col-span-1">
+            <label for="name" class="block text-sm font-semibold mb-1.5">Full name</label>
+            <input id="name" name="name" type="text" required class="w-full h-11 px-3 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200" />
+          </div>
+          <div class="sm:col-span-1">
+            <label for="phone" class="block text-sm font-semibold mb-1.5">Phone</label>
+            <input id="phone" name="phone" type="tel" required class="w-full h-11 px-3 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200" />
+          </div>
+          <div class="sm:col-span-2">
+            <label for="email" class="block text-sm font-semibold mb-1.5">Email</label>
+            <input id="email" name="email" type="email" required class="w-full h-11 px-3 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200" />
+          </div>
+          <div class="sm:col-span-2">
+            <label for="project-type" class="block text-sm font-semibold mb-1.5">Project type</label>
+            <select id="project-type" name="project-type" class="w-full h-11 px-3 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200">
+              <option>Kitchen Renovation</option>
+              <option>Bathroom Remodeling</option>
+              <option>Home Extension</option>
+              <option>Full House Renovation</option>
+              <option>Roofing &amp; Exteriors</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="message" class="block text-sm font-semibold mb-1.5">Project details</label>
+            <textarea id="message" name="message" rows="4" class="w-full px-3 py-2.5 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-colors duration-200"></textarea>
+          </div>
+          <div class="sm:col-span-2">
+            <button type="submit" class="inline-flex items-center justify-center min-h-12 px-8 rounded-md bg-accent text-on-accent font-bold hover:bg-accent-dark transition-colors duration-200 cursor-pointer">
+              Request Free Quote
+            </button>
+            <p id="form-success" class="hidden mt-4 text-sm font-semibold text-success">Thanks — we'll be in touch within one business day.</p>
+          </div>
+        </form>
+      </div>
+
+      <div class="lg:col-span-2 space-y-6">
+        <div class="rounded-lg bg-primary text-on-primary p-8">
+          <h3 class="font-display text-2xl tracking-wide mb-6">Contact Details</h3>
+          <ul class="space-y-4 text-on-primary/85">
+            <li class="flex items-start gap-3">
+              <svg class="size-5 text-accent shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v4a2 2 0 01-2 2C9.5 21 3 14.5 3 6a2 2 0 012-2z"/></svg>
+              <a href="tel:+3221234567" class="hover:text-on-primary transition-colors duration-200">+32 2 123 45 67</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="size-5 text-accent shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <a href="mailto:hello@ncodesign.be" class="hover:text-on-primary transition-colors duration-200">hello@ncodesign.be</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="size-5 text-accent shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span>Chaussée de Waterloo 200, 1050 Brussels</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="size-5 text-accent shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              <span>Mon–Fri, 8:00–18:00</span>
+            </li>
+          </ul>
+        </div>
+        <div class="rounded-lg border border-border bg-muted p-8">
+          <p class="text-sm font-bold uppercase tracking-widest text-secondary mb-4">Certified &amp; Insured</p>
+          <div class="grid grid-cols-2 gap-4 text-sm font-semibold">
+            <span class="inline-flex items-center gap-2"><svg class="size-4 text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>Reg. BE 0876.543.210</span>
+            <span class="inline-flex items-center gap-2"><svg class="size-4 text-accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>10-yr Structural Cover</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
 </main>
 
 <!-- Footer -->
-<footer class="border-t border-border py-10 px-4 md:px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-secondary">
-    <p>&copy; <span id="year"></span> NCO Design. All rights reserved.</p>
-    <div class="flex items-center gap-6">
-      <a href="#" class="hover:text-accent transition-colors duration-200">Instagram</a>
-      <a href="#" class="hover:text-accent transition-colors duration-200">LinkedIn</a>
-      <a href="#" class="hover:text-accent transition-colors duration-200">Dribbble</a>
+<footer class="bg-primary text-on-primary">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <span class="font-display text-3xl leading-none tracking-wide">NCO<span class="text-accent">.</span></span>
+      <p class="mt-4 text-on-primary/70 leading-relaxed">Licensed general contractor for renovation and new construction across Brussels and Walloon Brabant.</p>
+      <div class="flex items-center gap-4 mt-6">
+        <a href="#" aria-label="Facebook" class="size-9 rounded-full border border-white/20 flex items-center justify-center hover:border-accent hover:text-accent transition-colors duration-200">
+          <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="size-9 rounded-full border border-white/20 flex items-center justify-center hover:border-accent hover:text-accent transition-colors duration-200">
+          <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="size-9 rounded-full border border-white/20 flex items-center justify-center hover:border-accent hover:text-accent transition-colors duration-200">
+          <svg class="size-4" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 3.5A1.5 1.5 0 106 5a1.5 1.5 0 00-1.5-1.5zM3.6 8.5h2.8V20H3.6zM9.5 8.5h2.7v1.6h.04c.38-.7 1.3-1.6 2.7-1.6 2.9 0 3.4 1.9 3.4 4.4V20h-2.8v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.8H9.5z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <p class="font-bold uppercase text-sm tracking-widest mb-4 text-on-primary/60">Services</p>
+      <ul class="space-y-3 text-on-primary/80">
+        <li><a href="#services" class="hover:text-accent transition-colors duration-200">Kitchen Renovation</a></li>
+        <li><a href="#services" class="hover:text-accent transition-colors duration-200">Bathroom Remodeling</a></li>
+        <li><a href="#services" class="hover:text-accent transition-colors duration-200">Home Extensions</a></li>
+        <li><a href="#services" class="hover:text-accent transition-colors duration-200">Full House Renovation</a></li>
+        <li><a href="#services" class="hover:text-accent transition-colors duration-200">Roofing &amp; Exteriors</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-bold uppercase text-sm tracking-widest mb-4 text-on-primary/60">Company</p>
+      <ul class="space-y-3 text-on-primary/80">
+        <li><a href="#process" class="hover:text-accent transition-colors duration-200">Our Process</a></li>
+        <li><a href="#projects" class="hover:text-accent transition-colors duration-200">Projects</a></li>
+        <li><a href="#reviews" class="hover:text-accent transition-colors duration-200">Reviews</a></li>
+        <li><a href="#faq" class="hover:text-accent transition-colors duration-200">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-bold uppercase text-sm tracking-widest mb-4 text-on-primary/60">Contact</p>
+      <ul class="space-y-3 text-on-primary/80">
+        <li>+32 2 123 45 67</li>
+        <li>hello@ncodesign.be</li>
+        <li>Chaussée de Waterloo 200,<br />1050 Brussels</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-16 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-on-primary/50">
+      <p>&copy; <span id="year"></span> NCO Design &amp; Build. Reg. BE 0876.543.210. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-on-primary transition-colors duration-200">Privacy Policy</a>
+        <a href="#" class="hover:text-on-primary transition-colors duration-200">Terms</a>
+      </div>
     </div>
   </div>
 </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  menuBtn.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('hidden') === false;
-    menuBtn.setAttribute('aria-expanded', String(isOpen));
-  });
-</script>
-
+<script src="assets/script.js"></script>
 </body>
 </html>
