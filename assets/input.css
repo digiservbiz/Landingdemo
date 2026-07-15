@@ -52,6 +52,17 @@ html {
   background-size: 40px 40px;
 }
 
+/* Honest placeholder for real project photography — diagonal hatch reads
+   as "image not yet supplied", it never pretends to be a photo. */
+.photo-ph {
+  background-color: var(--color-muted);
+  background-image: repeating-linear-gradient(135deg, var(--color-border) 0 2px, transparent 2px 16px);
+}
+.photo-ph-dark {
+  background-color: var(--color-primary-light);
+  background-image: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0 2px, transparent 2px 16px);
+}
+
 .text-balance {
   text-wrap: balance;
 }
