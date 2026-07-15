@@ -1,0 +1,14 @@
+{
+  "name": "landingdemo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NCO Design landing page",
+  "scripts": {
+    "build:css": "tailwindcss -i assets/input.css -o assets/style.css --minify",
+    "watch:css": "tailwindcss -i assets/input.css -o assets/style.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "tailwindcss": "^4.3.2"
+  }
+}
