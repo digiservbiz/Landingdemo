@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DigiServ — Digital services that ship</title>
+  <meta name="description" content="DigiServ builds websites, automations and marketing systems for small businesses. Book a free strategy call.">
+  <style>
+    :root {
+      --bg: #0b1020; --surface: #131a33; --text: #e8ecf8; --muted: #9aa4c4;
+      --accent: #5b8cff; --accent-2: #22c55e; --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: inherit; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+    .logo { font-weight: 800; font-size: 1.25rem; text-decoration: none; }
+    .logo span { color: var(--accent); }
+    nav a { margin-left: 20px; color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--text); }
+    .btn { display: inline-block; padding: 12px 22px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; border: 0; cursor: pointer; font-size: 1rem; }
+    .btn.ghost { background: transparent; border: 1px solid #2a345c; }
+    .hero { padding: 80px 0 60px; text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.15; margin-bottom: 18px; }
+    .hero p { color: var(--muted); font-size: 1.15rem; max-width: 620px; margin: 0 auto 30px; }
+    .hero .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    section { padding: 60px 0; }
+    h2 { font-size: 2rem; text-align: center; margin-bottom: 36px; }
+    .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { background: var(--surface); border-radius: var(--radius); padding: 26px; border: 1px solid #1f2850; }
+    .card h3 { margin-bottom: 8px; }
+    .card p, .card li { color: var(--muted); }
+    .price { font-size: 2.2rem; font-weight: 800; margin: 10px 0; }
+    .price small { font-size: 1rem; color: var(--muted); font-weight: 400; }
+    .card ul { padding-left: 18px; margin: 14px 0 22px; }
+    .card.featured { border-color: var(--accent); }
+    .badge { display: inline-block; font-size: .75rem; background: var(--accent-2); color: #04210f; padding: 2px 10px; border-radius: 999px; font-weight: 700; }
+    form { max-width: 520px; margin: 0 auto; display: grid; gap: 12px; }
+    input, textarea { width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid #2a345c; background: var(--surface); color: var(--text); font: inherit; }
+    footer { padding: 30px 0; color: var(--muted); text-align: center; border-top: 1px solid #1f2850; }
+    @media (max-width: 600px) { nav a:not(.btn) { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="/">Digi<span>Serv</span></a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a class="btn" href="#contact">Get started</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>Digital services that grow your business</h1>
+        <p>Websites, automations and marketing systems for small businesses. We build them, launch them and keep them running.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Book a free call</a>
+          <a class="btn ghost" href="#services">See what we do</a>
+        </div>
+      </div>
+
+      <section id="services">
+        <h2>What we do</h2>
+        <div class="grid">
+          <div class="card"><h3>Websites &amp; landing pages</h3><p>Fast pages that turn visitors into leads, hosted on your own server.</p></div>
+          <div class="card"><h3>Automation</h3><p>Lead capture, follow-up emails and CRM updates that run themselves.</p></div>
+          <div class="card"><h3>Marketing</h3><p>SEO, ads and content campaigns, reported in plain language.</p></div>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <h2>Simple pricing</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Starter</h3>
+            <div class="price">$299<small> one-time</small></div>
+            <ul><li>One landing page</li><li>Contact form</li><li>Deployment to your VPS</li></ul>
+            <a class="btn ghost" href="#contact">Choose Starter</a>
+          </div>
+          <div class="card featured">
+            <span class="badge">Most popular</span>
+            <h3>Growth</h3>
+            <div class="price">$149<small> /month</small></div>
+            <ul><li>Website up to 5 pages</li><li>Lead automation</li><li>Monthly report</li></ul>
+            <a class="btn" href="#contact">Choose Growth</a>
+          </div>
+          <div class="card">
+            <h3>Scale</h3>
+            <div class="price">Custom</div>
+            <ul><li>Full marketing stack</li><li>Integrations</li><li>Priority support</li></ul>
+            <a class="btn ghost" href="#contact">Talk to us</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Let's talk</h2>
+        <!-- Replace the action with your form endpoint (Formspree, n8n webhook, etc.). -->
+        <form action="mailto:hello@example.com" method="post" enctype="text/plain">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <textarea name="message" rows="4" placeholder="What do you need?"></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy; <span id="y"></span> DigiServ. All rights reserved.</footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
